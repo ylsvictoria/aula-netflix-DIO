@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 
 /*elementos base*/
 }
@@ -14,13 +15,19 @@ body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 header .container{
-    display: flex;
+    display:flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content:space-between;
+    align-content: flex-start;
+  
+    
 }
 
 header .logo{
@@ -31,13 +38,60 @@ header .logo{
 }
 header nav a{
     text-decoration: none;
-    color: #AAA;
+    color: #fff;
     margin-right: 10px;
 }
 header nav a:hover{
     color: #fff;
 
+
+}/*secondary-navigation*/
+
+ header .container .secondary-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 800px;
+    color: #fff;
+    text-transform: uppercase;
+    list-style: none;
+    color: #fff;
+    flex-direction: row;
+    
+ }
+
+.container .secondary-navigation .profile-change {
+    color: #fff;
+    justify-content: space-between;
 }
+
+.container .secondary-navigation .fa-search{
+    font-size: 18px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.container .secondary-navigation .fa-gift{
+    font-size: 20px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.container .secondary-navigation .fa-bell{
+    font-size: 22px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.container .secondary-navigation img{
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+
+
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
